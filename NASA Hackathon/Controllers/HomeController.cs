@@ -5,6 +5,7 @@ using NASA_Hackathon.Models;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -41,16 +42,29 @@ namespace NASA_Hackathon.Controllers
 
         public IActionResult Level3()
         {
-            return View();
+            return View(new Level3Model());
         }
 
         [HttpPost]
-        public IActionResult Level3(Level3Model model)
+        public IActionResult Level3(string base64image)
         {
-            Console.WriteLine("123");
+            double concentration = 0;//濃度
+            //影像數組
+            string Base64String = base64image.Replace("data:image/jpeg;base64,", String.Empty);
+            byte[] imageBytes = Convert.FromBase64String(Base64String);
+            Bitmap bmp;
+            using (var ms = new System.IO.MemoryStream(imageBytes))
+            {
+                bmp = new Bitmap(ms);
+            }
+            Antibody antibody = new Antibody(bmp);
+            if (antibody.PeakIntensity.Count >= 2)
+            { concentration = antibody.CaculateConcentration(antibody.PeakIntensity[1]); }
+            else
+            {//彈出訊息 無抗體濃度
+            }
             return View();
         }
-
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
