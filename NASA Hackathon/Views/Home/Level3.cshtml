@@ -1,10 +1,10 @@
 ﻿@model NASA_Hackathon.Models.Level3Model
 
 @{
-    ViewBag.Title = "Level3";
+    ViewBag.Title = "中和抗體試紙換算中和抗體濃度";
 }
 
-<h2>Level 3</h2>
+<h2>中和抗體試紙換算中和抗體濃度</h2>
 
 @using (Html.BeginForm())
 {
@@ -32,31 +32,62 @@
         $("#btncapture").click(function () {
             Webcam.snap(function (data_uri) {
                 $("#idcaptured")[0].src = data_uri;
+                var element = document.getElementById('idcaptured');
+                element.style.clip = "rect(160px, 140px, 175px, 60px)";
+                element.style.position = "absolute";
 
+
+                var element = document.getElementById('MyImage');
+                element.value = "";
                 /*Webcam.upload(data_uri, '/Home/Level3', function (code, text) {
                     alert("123")
                 });*/
-            });            
+            });
         });
 
+        //計算
         $("#btncalculate").click(function () {
             var file = document.getElementById("idcaptured").src;
 
             var formdata = new FormData();
             formdata.append("base64image", file);
 
+            var element = document.getElementById('idcaptured');
+            if (element.style.position == "absolute")
+                formdata.append("crop", true);
+            else
+                formdata.append("crop", false);
+
             $.ajax({
                 url: "/Home/Level3",
                 type: "POST",
-
                 data: formdata,
                 processData: false,
-                contentType: false
+                contentType: false,
+                success: function (response) {
+                    alert(response.responseText);
+                },
             });
+        });
+
+        //讀檔
+        $("#MyImage").change(function () {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#idcaptured').attr('src', e.target.result);
+                }
+                var element = document.getElementById('idcaptured');
+                element.style.clip = "rect(auto, auto, auto, auto)";
+                element.style.position = "relative";
+
+                reader.readAsDataURL(this.files[0]);
+            }
         });
     });
 </script>
 
+<hr />
 <table border="0" cellpadding="0" cellspacing="0" data-role="table" class="ui-responsive">
     <tr>
         <th align="center">Live Camera</th>
@@ -65,20 +96,25 @@
     <tr>
         <td style="position: relative">
             <div id="idwebcam"></div>
-            <span style="position: absolute; top: 110px; left: 20px; color:red; font-weight:bold;">將紅框對準試紙區</span>
-            <div style="position: absolute; top: 135px; left: 20px; border: 5px solid red; width: 200px; height: 60px"></div>
+            <span style="position: absolute; top: 140px; left: 50px; color:red; font-weight:bold;">將紅框對準試紙區</span>
+            <div style="position: absolute; top: 160px; left: 60px; border: 5px solid red; width: 80px; height: 15px"></div>
         </td>
-        <td style="position: relative">
-            <img style="position: absolute; top: 0px; left: 0px; clip: rect(135px 220px 195px 20px);" id="idcaptured" />
+        <td style="position: relative; text-align:center; vertical-align:middle">
+            <img style="position: absolute; top: 0px; left: 0px; clip: rect(160px 140px 175px 60px);" id="idcaptured" />
         </td>
     </tr>
     <tr>
         <td align="center">
-            <br>
+            <input type="file" id="MyImage" name="MyImage">
+        </td>
+        <td align="center">
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
             <input type="button" id="btncapture" value="截取" class="btn btn-primary" />
         </td>
         <td align="center">
-            <br>
             <input type="submit" id="btncalculate" value="計算" class="btn btn-primary" />
         </td>
     </tr>

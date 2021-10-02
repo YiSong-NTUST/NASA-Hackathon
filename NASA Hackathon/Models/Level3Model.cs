@@ -7,6 +7,6 @@ namespace NASA_Hackathon.Models
 {
     public class Level3Model
     {
-        public string uri { get; set; }
+        public string concentration { get; set; }
     }
 }

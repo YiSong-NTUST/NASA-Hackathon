@@ -8,5 +8,6 @@ namespace NASA_Hackathon.Models
     public class Level2Model
     {
         public int NeutralizingAntibodies  { get; set; }
+        public double efficacy { get; set; }
     }
 }
