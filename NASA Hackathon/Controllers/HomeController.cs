@@ -49,39 +49,39 @@ namespace NASA_Hackathon.Controllers
             model.brandList = brandList;
 
             List<SelectListItem> locationList = new List<SelectListItem>();
-            locationList.Add(new SelectListItem() { Text = "美國", Value = "美國", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "基隆市", Value = "基隆市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台北市", Value = "台北市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新北市", Value = "新北市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "桃園市", Value = "桃園市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新竹縣", Value = "新竹縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新竹市", Value = "新竹市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "苗栗縣", Value = "苗栗縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "苗栗市", Value = "苗栗市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台中市", Value = "台中市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "南投縣", Value = "南投縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "南投市", Value = "南投市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "彰化縣", Value = "彰化縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "彰化市", Value = "彰化市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "雲林縣", Value = "雲林縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "嘉義縣", Value = "嘉義縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "嘉義市", Value = "嘉義市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台南市", Value = "台南市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "高雄市", Value = "高雄市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "屏東縣", Value = "屏東縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "屏東市", Value = "屏東市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "宜蘭縣", Value = "宜蘭縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "宜蘭市", Value = "宜蘭市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "花蓮縣", Value = "花蓮縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "花蓮市", Value = "花蓮市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台東縣", Value = "台東縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台東市", Value = "台東市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "澎湖縣", Value = "澎湖縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "綠島", Value = "綠島", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "蘭嶼", Value = "蘭嶼", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "金門縣", Value = "金門縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "馬祖", Value = "馬祖", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "連江縣", Value = "連江縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "United States", Value = "美國", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Keelung", Value = "基隆市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taipei", Value = "台北市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "NewTaipei", Value = "新北市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taoyuan", Value = "桃園市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hsinchu County", Value = "新竹縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hsinchu City", Value = "新竹市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Miaoli County", Value = "苗栗縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Miaoli City", Value = "苗栗市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taichung", Value = "台中市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Nantou County", Value = "南投縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Nantou City", Value = "南投市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Changhua County", Value = "彰化縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Changhua City", Value = "彰化市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yunlin County", Value = "雲林縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Chiayi County", Value = "嘉義縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Chiayi City", Value = "嘉義市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Tainan City", Value = "台南市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Kaohsiung City", Value = "高雄市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Pingtung County", Value = "屏東縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Pingtung City", Value = "屏東市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yilan County", Value = "宜蘭縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yilan City", Value = "宜蘭市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hualien County", Value = "花蓮縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hualien City", Value = "花蓮市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taitung County", Value = "台東縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taitung City", Value = "台東市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Penghu County", Value = "澎湖縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Green Island", Value = "綠島", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Orchid Island", Value = "蘭嶼", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Kinmen County", Value = "金門縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Matsu", Value = "馬祖", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Lienchiang County", Value = "連江縣", Selected = false });
             model.locationList = locationList;
 
             return View(model);
@@ -261,7 +261,7 @@ namespace NASA_Hackathon.Controllers
             }
 
             percentage *= value;
-            ViewBag.Message = "風險值為:" + (percentage * 100.0).ToString() + " %" + "      與武漢疫情巔峰相比為: " + ((percentage*100.0) / 0.03189) + " 倍";
+            ViewBag.Message = "Risk: " + (percentage * 100.0).ToString("#0.000") + " %" + "      It is " + ((percentage*100.0) / 0.03189).ToString("#0.000") + " times more serious than the peak of the Wuhan epidemic";
 
             model = new Level1Model();
 
@@ -274,39 +274,39 @@ namespace NASA_Hackathon.Controllers
             model.brandList = brandList;
 
             List<SelectListItem> locationList = new List<SelectListItem>();
-            locationList.Add(new SelectListItem() { Text = "美國", Value = "美國", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "基隆市", Value = "基隆市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台北市", Value = "台北市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新北市", Value = "新北市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "桃園市", Value = "桃園市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新竹縣", Value = "新竹縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "新竹市", Value = "新竹市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "苗栗縣", Value = "苗栗縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "苗栗市", Value = "苗栗市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台中市", Value = "台中市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "南投縣", Value = "南投縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "南投市", Value = "南投市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "彰化縣", Value = "彰化縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "彰化市", Value = "彰化市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "雲林縣", Value = "雲林縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "嘉義縣", Value = "嘉義縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "嘉義市", Value = "嘉義市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台南市", Value = "台南市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "高雄市", Value = "高雄市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "屏東縣", Value = "屏東縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "屏東市", Value = "屏東市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "宜蘭縣", Value = "宜蘭縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "宜蘭市", Value = "宜蘭市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "花蓮縣", Value = "花蓮縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "花蓮市", Value = "花蓮市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台東縣", Value = "台東縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "台東市", Value = "台東市", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "澎湖縣", Value = "澎湖縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "綠島", Value = "綠島", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "蘭嶼", Value = "蘭嶼", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "金門縣", Value = "金門縣", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "馬祖", Value = "馬祖", Selected = false });
-            locationList.Add(new SelectListItem() { Text = "連江縣", Value = "連江縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "United States", Value = "美國", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Keelung", Value = "基隆市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taipei", Value = "台北市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "NewTaipei", Value = "新北市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taoyuan", Value = "桃園市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hsinchu County", Value = "新竹縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hsinchu City", Value = "新竹市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Miaoli County", Value = "苗栗縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Miaoli City", Value = "苗栗市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taichung", Value = "台中市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Nantou County", Value = "南投縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Nantou City", Value = "南投市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Changhua County", Value = "彰化縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Changhua City", Value = "彰化市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yunlin County", Value = "雲林縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Chiayi County", Value = "嘉義縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Chiayi City", Value = "嘉義市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Tainan City", Value = "台南市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Kaohsiung City", Value = "高雄市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Pingtung County", Value = "屏東縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Pingtung City", Value = "屏東市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yilan County", Value = "宜蘭縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Yilan City", Value = "宜蘭市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hualien County", Value = "花蓮縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Hualien City", Value = "花蓮市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taitung County", Value = "台東縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Taitung City", Value = "台東市", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Penghu County", Value = "澎湖縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Green Island", Value = "綠島", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Orchid Island", Value = "蘭嶼", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Kinmen County", Value = "金門縣", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Matsu", Value = "馬祖", Selected = false });
+            locationList.Add(new SelectListItem() { Text = "Lienchiang County", Value = "連江縣", Selected = false });
             model.locationList = locationList;
 
             
@@ -325,7 +325,7 @@ namespace NASA_Hackathon.Controllers
         {
             Nuel2Efficacy nuel2Efficacy = new Nuel2Efficacy();
             double normalized_convalerate_value = 700.0;
-            model.efficacy = nuel2Efficacy.Convert_GMT_to_Efficacy(Convert.ToDouble(model.NeutralizingAntibodies) / normalized_convalerate_value);
+            model.efficacy = Math.Round(nuel2Efficacy.Convert_GMT_to_Efficacy(Convert.ToDouble(model.NeutralizingAntibodies) / normalized_convalerate_value), 3);
             return View(model);
         }
 
@@ -378,12 +378,12 @@ namespace NASA_Hackathon.Controllers
                 Nuel2Efficacy nuel2Efficacy = new Nuel2Efficacy();
                 double efficacy = nuel2Efficacy.Convert_GMT_to_Efficacy(concentration/200.0);
 
-                return Json(new { success = true, responseText = "保護力為: " + efficacy.ToString() + " %" });
+                return Json(new { success = true, responseText = "Protection Value: " + efficacy.ToString("#0.000") + " %" });
             }
             else
             {
-                model.concentration = "無抗體濃度";
-                return Json(new { success = true, responseText = "無抗體濃度" });
+                model.concentration = "No antibody concentration";
+                return Json(new { success = true, responseText = "No antibody concentration" });
             }     
         }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
