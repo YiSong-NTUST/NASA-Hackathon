@@ -38,6 +38,8 @@ namespace NASA_Hackathon.Controllers
         {
             Level1Model model = new Level1Model();
 
+            model.date = DateTime.Now;
+
             List<SelectListItem> brandList = new List<SelectListItem>();
             brandList.Add(new SelectListItem() { Text = "Moderna", Value = "Moderna", Selected = false });
             brandList.Add(new SelectListItem() { Text = "BNT", Value = "BNT", Selected = false });
@@ -322,7 +324,8 @@ namespace NASA_Hackathon.Controllers
         public IActionResult Level2(Level2Model model)
         {
             Nuel2Efficacy nuel2Efficacy = new Nuel2Efficacy();
-            model.efficacy = nuel2Efficacy.Convert_GMT_to_Efficacy(Convert.ToDouble(model.NeutralizingAntibodies));
+            double normalized_convalerate_value = 700.0;
+            model.efficacy = nuel2Efficacy.Convert_GMT_to_Efficacy(Convert.ToDouble(model.NeutralizingAntibodies) / normalized_convalerate_value);
             return View(model);
         }
 
