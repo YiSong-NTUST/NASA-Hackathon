@@ -85,3 +85,4 @@ C:\gitlab\NASA-Hackathon\NASA Hackathon\obj\Debug\netcoreapp3.1\NASA Hackathon.c
 C:\gitlab\NASA-Hackathon\NASA Hackathon\obj\Debug\netcoreapp3.1\NASA Hackathon.dll
 C:\gitlab\NASA-Hackathon\NASA Hackathon\obj\Debug\netcoreapp3.1\NASA Hackathon.pdb
 C:\gitlab\NASA-Hackathon\NASA Hackathon\obj\Debug\netcoreapp3.1\NASA Hackathon.genruntimeconfig.cache
+C:\gitlab\NASA-Hackathon\NASA Hackathon\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

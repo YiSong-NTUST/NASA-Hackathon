@@ -44,6 +44,7 @@ C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\NASA Hackathon.dep
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\NASA Hackathon.runtimeconfig.json
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\NASA Hackathon.pdb
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\Microsoft.Win32.SystemEvents.dll
+C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\Newtonsoft.Json.dll
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\System.Drawing.Common.dll
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\YiSong\AppData\Local\Temp\AWSDeploy.a46cc6ea\package\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
