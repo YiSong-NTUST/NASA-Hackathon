@@ -94,11 +94,15 @@ namespace NASA_Hackathon.Controllers
                 concentration = antibody.CaculateConcentration(antibody.PeakIntensity[1]);
 
                 model.concentration = concentration.ToString();
-                return Json(new { success = true, responseText = concentration.ToString() });
+
+                Nuel2Efficacy nuel2Efficacy = new Nuel2Efficacy();
+                double efficacy = nuel2Efficacy.Convert_GMT_to_Efficacy(concentration/200.0);
+
+                return Json(new { success = true, responseText = "保護力為: " + efficacy.ToString() + " %" });
             }
             else
             {
-                model.concentration = "中和抗體濃度:無抗體濃度";
+                model.concentration = "無抗體濃度";
                 return Json(new { success = true, responseText = "無抗體濃度" });
             }     
         }
