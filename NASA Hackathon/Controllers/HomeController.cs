@@ -98,7 +98,7 @@ namespace NASA_Hackathon.Controllers
             }
             else
             {
-                model.concentration = "無抗體濃度";
+                model.concentration = "中和抗體濃度:無抗體濃度";
                 return Json(new { success = true, responseText = "無抗體濃度" });
             }     
         }
